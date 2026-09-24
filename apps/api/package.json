@@ -1,5 +1,10 @@
 {
   "name": "@gradlens/api",
   "version": "1.0.0",
-  "private": true
+  "private": true,
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  }
 }
