@@ -13,5 +13,22 @@ services:
       timeout: 5s
       retries: 5
 
+api:
+    build:
+      context: ./apps/api
+    environment:
+      PORT: 3000
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  web:
+    build:
+      context: ./apps/web
+    ports:
+      - "80:80"
+    depends_on:
+      - api
+
 volumes:
   postgres_data:
