@@ -1,5 +1,9 @@
 {
   "name": "@gradlens/web",
   "version": "1.0.0",
-  "private": true
+  "private": true,
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "vite build"
+  }
 }
