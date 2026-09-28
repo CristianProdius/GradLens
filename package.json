@@ -6,7 +6,7 @@
     "apps/web",
     "apps/api",
     "packages/grade-math"
-  ]
+  ],
   "scripts": {
     "typecheck": "npm run typecheck --workspaces"
   }
