@@ -5,6 +5,15 @@
   "scripts": {
     "typecheck": "tsc --noEmit",
     "build": "tsc",
-    "start": "node dist/index.js"
-}
+    "start": "node dist/index.js",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev"
+  },
+  "devDependencies": {
+    "prisma": "^7.10.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^7.10.0",
+    "dotenv": "^18.0.5"
+  }
 }
