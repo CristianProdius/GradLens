@@ -6,5 +6,11 @@
     "apps/web",
     "apps/api",
     "packages/grade-math"
-  ]
+  ],
+  "scripts": {
+    "typecheck": "npm run typecheck --workspaces"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  }
 }
